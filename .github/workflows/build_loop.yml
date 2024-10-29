@@ -277,6 +277,12 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+      - name: Customize Loop
+        run: |
+          # Submodule LoopKit patches:
+          # LoopKit: Guardrail+Settings.swift: Adjusting absoluteBounds of correctionRange.
+          curl https://github.com/tsvikit/LoopKit/commit/fddfc12e1891f507d94a3de6ab503b5712bfc1db.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
