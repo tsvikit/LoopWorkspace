@@ -269,7 +269,7 @@ jobs:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
-          # curl https://github.com/tsvikit/LoopKit/commit/fddfc12e1891f507d94a3de6ab503b5712bfc1db.patch | git apply --directory=LoopKit -v --whitespace=fix
+          curl https://github.com/tsvikit/LoopKit/commit/8e2141593874743d0b927a94d7607daa25557c66.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # Submodule xxxxx patches:
 
